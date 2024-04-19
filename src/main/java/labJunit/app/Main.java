@@ -10,7 +10,7 @@ public class Main {
 		
 		double p = c.produit(10, 20);
 		System.out.println("Le produit de 10 et 20 : "+p);
-		
+
 
 	}
 
