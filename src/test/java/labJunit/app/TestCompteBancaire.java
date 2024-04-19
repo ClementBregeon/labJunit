@@ -7,26 +7,26 @@ import org.junit.jupiter.api.Test;
 
 public class TestCompteBancaire {
 	@Test
-	void testDebiter1() {
+	void testDebiter() {
 		CompteBancaire c = new CompteBancaire(100);
 		assertEquals(99.5,c.debiterSolde(0.5));
 	}
 	
 	@Test
-	void testDebiter2() {
+	void testDebiterZero() {
 		CompteBancaire c = new CompteBancaire(100);
-		assertEquals(90,c.debiterSolde(10));
+		assertEquals(100,c.debiterSolde(0));
 	}
-
+	
 	@Test
-	void testCrediter1() {
+	void testCrediter() {
 		CompteBancaire c = new CompteBancaire(100);
 		assertEquals(110,c.crediterSolde(10));
 	}
 	
 	@Test
-	void testCrediter2() {
+	void testCrediterZero() {
 		CompteBancaire c = new CompteBancaire(100);
-		assertEquals(100.5,c.crediterSolde(0.5));
+		assertEquals(100,c.crediterSolde(0));
 	}
 }
